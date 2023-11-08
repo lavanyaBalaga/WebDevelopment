@@ -1,0 +1,19 @@
+<html>
+  <body>
+	<button onclick=leapyear()>Year Check</button>
+	<script>
+	function leapyear()
+        {
+		var year = prompt("Enter Year:");
+		if(year%400 ==0 || (year%100 !=0 && year%4==0))
+		{
+			document.write("Leap Year");
+		}
+		else
+		{
+		         document.write("Not a Leap Year");
+		}
+	}
+	</script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<body>
+<script>
+const str = "Hello World";
+document.writeln("charAt "+str.charAt()+"<br>");    
+document.writeln("charAt "+str.charAt(9)+"<br>");
+const text1 = 'hello';
+const text2 = 'world';
+const text3 = '     JavaScript    ';
+const result1 = text1.concat(' ', text2);
+document.writeln("concat "+result1+"<br>"); 
+const result2 = text1.toUpperCase();
+document.writeln("uppercase "+result2+"<br>"); 
+let geeks2 = 'stands-for-GEEKSGEEKS';
+document.write("lowercase "+geeks2.toLowerCase()+"<br>");
+const result3 = text3.trim();
+document.writeln("trim "+result3+"<br>"); 
+const result5= text1.slice(1, 3);
+document.writeln("slice "+result5+"<br>");
+const text = "Please visit Microsoft!";
+const newText = text.replace("MICROSOFT", "W3Schools");
+document.write("replace "+newText+"<br>");
+let geeks = 'GeeksforGeeks';
+document.writeln("endswith  "+geeks.endsWith('s')+"<br>");
+document.writeln("startswith  "+geeks.startsWith('G')+"<br>");
+let geeks1 = 'stands for GeeksforGeeks';
+document.write("indexof "+geeks1.indexOf('G')+"<br>"); 
+const text4 = "Hello World!";
+let len = text4.length;
+document.write("length "+len+"<br>"); 
+let text5 = "Hello world, welcome to the universe.";
+let result7 = text5.includes("world");
+document.write("includes "+result7+"<br>"); 
+</script>
+</body></html>

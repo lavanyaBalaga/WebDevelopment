@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+<input type="text" id=a onfocus=click1() onblur=click2()>
+<select id="mySelect" onchange="myFunction()">
+  <option value="pinky">pinky</option>
+  <option value="brownie">Brownie</option>
+  <option value="puppy">puppy</option>
+  <option value="chotu">chotu</option>
+</select>
+<script>
+function myFunction() {
+  var x = document.getElementById("mySelect").value;
+}
+function click1()
+{
+ document.getElementById("a").style.background="pink";
+}
+function click2()
+{
+ document.getElementById("a").style.background="green";
+}
+</script>
+</body>
+</html>

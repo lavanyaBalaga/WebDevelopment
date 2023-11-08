@@ -1,0 +1,27 @@
+<html>
+<body>
+<form>
+<label for="num">Enter a number:</label>
+<input type="text" id="num" name="num"><br>
+<button onclick="reverse()">Reverse</button>
+</form>
+<script>
+function reverse()
+{
+var a=+document.getElementById("num").value;
+var l=document.getElementById("num").value.length;
+var sum=0;
+for(var i=l-1;i>-1;i--)
+{
+if(a>0)
+{
+sum=sum+(a%10*(10**i));
+a=Math.floor(a/10);
+}
+}
+document.write(sum);
+}
+</script>
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+<html>
+<body>
+<button onclick=search()>search</button>
+<script>
+function search()
+{
+var num = [1,6,8,10,5,3];
+var so = num.sort();
+n=num.length;
+var a=prompt('Enter a number for search:');
+var left=0;
+var right=n-1;
+mid=Math.floor((left+right)/2);
+while(left<=right)
+{
+if(a==so[mid]){
+document.write('number is found at index '+mid);
+return;}
+else if (a>so[mid])
+left=mid+1;
+else
+right=mid-1;
+mid=Math.floor((left+right)/2);
+}
+document.write('Number not found');
+}
+</script>
+</body>
+</html>

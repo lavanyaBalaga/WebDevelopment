@@ -1,0 +1,47 @@
+<html>
+<body>
+  <script>
+    let x, y, res, ch
+
+    document.write("Enter 1 For Addition:")
+    document.write("Enter 2 For Subtraction:")
+    document.write("Enter 3 For Multiplication:")
+    document.write("Enter 4 For Division :")
+    document.write("Enter 5 For Modulus :")
+    ch = parseInt(prompt("Enter your choice:"))
+    if (ch > 0 && ch < 6) {
+      x = parseInt(prompt("Enter first number"))
+      y = parseInt(prompt("Enter second number"))
+    }
+    switch (ch) {
+      case 1:
+      res = x + y;
+      document.write("\nResult is :" + res)
+      break
+
+      case 2:
+      res = x - y
+      document.write("\nResult is :" + res)
+      break
+
+      case 3:
+      res = x * y
+      document.write("\nResult is :" + res)
+      break
+
+      case 4:
+      res = x / y
+      document.write("\nResult is :" + res)
+      break
+
+      case 5:
+      res = x % y;
+      document.write("\nResult is :" + res)
+      break
+
+      default:
+      document.write("Invalid Choice:" + ch)
+    }
+  </script>
+</body>
+</html>

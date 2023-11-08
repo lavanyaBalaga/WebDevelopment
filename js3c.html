@@ -1,0 +1,14 @@
+<html>
+<body>
+<button onclick="rig()">RIG</button>
+<img id="img">
+<script>
+function rig()
+{
+var images =['puppy.jpg' ,'puppy2.jpg'];
+var a=Math.floor(Math.random() * images.length);
+document.getElementById('img').src=images[a];
+}
+</script>
+</body>
+</html>
